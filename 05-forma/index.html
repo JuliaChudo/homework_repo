@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="#" method="post" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;"
+>
+        <label for="full_name">Повне ім'я*</label>
+        <input type="text" name="full_name" id="full_name" placeholder="Микола" required>
+        <br>
+        <label for="email">Email*</label>
+        <input type="text" name="email" id="email" placeholder="*@*.*" required>
+        <br>
+        <label for="password">Пароль*</label>
+        <input type="password" name="password" id="password" placeholder="******" required>
+        <br>
+        <label for="password_repeat">Повторіть пароль*</label>
+        <input type="password" name="password_repeat" id="password_repeat" placeholder="******" required>
+        <br>
+        <span>Стать*</span>
+        <label>
+            <input type="radio" name="gender" value="male" checked> Чоловіча
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Жіноча
+        </label>
+        <br>
+        <label>
+            Вік* <input type="text" name="age"  placeholder="18" required>
+        </label>
+        <br>
+        <span> Курс </span>
+        <select name="course">
+            <option disabled="disabled" selected>Оберіть курс</option>
+            <option value="Front-End">Front-End</option>
+            <option value="Back-End">Back-End</option>
+            <option value="Project Management">Project Management</option>
+            <option value="QA Manual">QA Manual</option>
+        </select>
+        <br>
+        <label for="adress">Повна адреса</label>
+        <textarea rows="4" name="adress" id="adress" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+        <br>
+        <label>
+            <input type="checkbox" name="consent" value="consent">Я погоджуюсь з обробкою персональних даних
+        </label>
+        <br>
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+
+    </form>
+</body>
+
+</html>
