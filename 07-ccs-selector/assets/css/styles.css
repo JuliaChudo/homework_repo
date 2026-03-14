@@ -1,6 +1,6 @@
-:root{
---height-conteiner:63px;
---color-orange: #FF8984;
+:root {
+    --height-conteiner: 63px;
+    --color-orange: #FF8984;
 }
 
 * {
@@ -31,7 +31,7 @@ h1+p {
 
 .grey-pink {
     background-color: #4A4F56;
-    color: var(--color-orange) ;
+    color: var(--color-orange);
     text-align: center;
 }
 
@@ -45,13 +45,14 @@ h1+p {
     border: 3px;
     border-top: solid transparent;
     border-bottom: solid transparent;
-   
+
 }
 
 li:nth-of-type(2n) {
     background-color: #7A7593;
 }
-.block{
+
+.block {
     margin-bottom: 40px;
 }
 
@@ -66,10 +67,11 @@ section {
 .text {
     margin-top: 30px;
 }
-.little_text{
+
+.little_text {
     font-size: 17px;
     margin-left: 10px;
-    
+
 }
 
 input[type="checkbox"]:checked~.text {
@@ -94,12 +96,14 @@ input[type="checkbox"] {
 }
 
 .check :active {
-    background-color:var(--color-orange);
+    background-color: var(--color-orange);
     color: #FFFFFF;
 }
-.rparenthes::after{
+
+.rparenthes::after {
     content: ")";
 }
-.lparenthes::before{
+
+.lparenthes::before {
     content: "(";
 }
