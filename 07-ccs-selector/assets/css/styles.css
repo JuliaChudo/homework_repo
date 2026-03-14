@@ -1,8 +1,8 @@
 :root{
---height-conteiner:68px;
+--height-conteiner:63px;
 --color-orange: #FF8984;
---border-height: 2px;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -36,19 +36,23 @@ h1+p {
 }
 
 .container {
-    display: block;
     background-color: #88839E;
-    align-items: center;
-    justify-self: center;
+    margin: 0 auto;
     width: 800px;
     height: var(--height-conteiner);
     line-height: var(--height-conteiner);
-    font-family: "Roboto";
-    font-style: Regular;
+    list-style-type: none;
+    border: 3px;
+    border-top: solid transparent;
+    border-bottom: solid transparent;
+   
 }
 
 li:nth-of-type(2n) {
     background-color: #7A7593;
+}
+.block{
+    margin-bottom: 40px;
 }
 
 footer {
@@ -61,6 +65,11 @@ section {
 
 .text {
     margin-top: 30px;
+}
+.little_text{
+    font-size: 17px;
+    margin-left: 10px;
+    
 }
 
 input[type="checkbox"]:checked~.text {
@@ -80,16 +89,17 @@ input[type="checkbox"] {
 }
 
 .check:hover {
-    border-style: solid;
     border-color: #FFFFFF;
-    border-right: var(--border-height);
-    border-left: var(--border-height);
-    height: 63px;
     background-color: #625E77;
-    line-height: 63px;
 }
 
 .check :active {
     background-color:var(--color-orange);
     color: #FFFFFF;
+}
+.rparenthes::after{
+    content: ")";
+}
+.lparenthes::before{
+    content: "(";
 }
