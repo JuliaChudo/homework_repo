@@ -10,7 +10,7 @@
 }
 
 body {
-    background: blue;
+    background: #3399CC;
     font-family: 'Lucida Sans Unicode';
     color: #FFFFFF;
 }
@@ -27,17 +27,14 @@ h1 {
     font-size: 0px;
     background: #FFFFFF;
     margin-bottom: 35px;
-
     li {
         padding-top: 25px;
-        opacity: 70%;
         display: inline-block;
         font-size: 21px;
         height: 147px;
         border: 3px solid white;
     }
 }
-
 .blue {
     background: #3399CC;
 }
@@ -93,7 +90,10 @@ h1 {
 .quarter {
     width: 25%;
 }
-
-li:hover {
-    opacity: 1;
+ul:hover li{
+    opacity: 50%;
 }
+ul li:hover{
+    opacity: 100%;
+}
+
