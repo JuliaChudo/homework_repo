@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 1169px;
+    width: 1167px;
     margin: 0 auto;
 }
 
@@ -17,8 +17,13 @@ body {
 
 h1 {
     font-size: 21px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 66px;
+    margin-bottom: 32px;
+
+    .wi {
+        font-size: 25px;
+    }
+
 }
 
 .table {
@@ -27,14 +32,21 @@ h1 {
     font-size: 0px;
     background: #FFFFFF;
     margin-bottom: 35px;
+
     li {
         padding-top: 25px;
+        padding-bottom: 0px;
         display: inline-block;
-        font-size: 21px;
+        font-size: 22px;
         height: 147px;
         border: 3px solid white;
+        .wi {
+            font-size: 42px;
+            margin-top: 9px;
+        }
     }
 }
+
 .blue {
     background: #3399CC;
 }
@@ -90,10 +102,11 @@ h1 {
 .quarter {
     width: 25%;
 }
-ul:hover li{
+
+ul:hover li {
     opacity: 50%;
 }
-ul li:hover{
+
+ul li:hover {
     opacity: 100%;
 }
-
