@@ -160,7 +160,7 @@ main {
     &:hover {
         border-color: var(--green);
 
-        use#blue {
+        use.blue {
             opacity: 0;
         }
     }
