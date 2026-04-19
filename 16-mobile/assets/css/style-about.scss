@@ -1,0 +1,32 @@
+$text-teg:#7B7B7B;
+
+@mixin fz($px) {
+    font-size: ($px/16)*1rem;
+}
+
+h1 {
+    padding-top: 0;
+    padding-bottom: 70px;
+}
+
+h2 {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-bottom: 90px;
+}
+
+img {
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: 'Lato';
+    @include fz(19);
+    color: $text-teg;
+    font-weight: 400;
+    padding-bottom: 25px;
+    line-height: 1.66;
+    letter-spacing: 0.9px;
+}
