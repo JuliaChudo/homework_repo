@@ -101,7 +101,7 @@ h1 {
   font-weight: 400;
   color: #262A3F;
   line-height: 52px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 }
 
 .color-ref {
@@ -125,13 +125,13 @@ h1 {
   width: 44%;
 }
 .main-text p {
-  width: 79%;
+  width: 85%;
   opacity: 0.8;
-  padding-bottom: 50px;
+  padding-bottom: 47px;
 }
 
 section:first-of-type {
-  padding-bottom: 143px;
+  padding-bottom: 145px;
 }
 
 section {
@@ -172,7 +172,7 @@ section {
   justify-content: space-between;
   text-align: center;
   gap: 60px;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 .images-text .info-list ul li:not(:last-child) {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 35%, #85BBB1 35% 65%, rgba(255, 255, 255, 0) 65% 100%, transparent 0%);
@@ -189,7 +189,7 @@ section {
   padding-bottom: 30px;
 }
 .images-text .info-text p:last-of-type {
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 
 .numder {
@@ -214,13 +214,15 @@ h2 {
 .info-table {
   display: grid;
   grid-template-columns: 48% 48%;
-  gap: 5.5vw 35px;
-  padding-bottom: 20px;
+  gap: 20vh 40px;
 }
 .info-table li {
-  padding: 30px 30px;
+  padding: 30px 35px;
   border-top: solid 1px #E4E4E4;
   aspect-ratio: 550/250;
+}
+.info-table li h2 {
+  width: 87%;
 }
 
 .author {
@@ -236,11 +238,18 @@ h2 {
   background: url("../images/quote-background2.png") center/100% no-repeat;
   aspect-ratio: 1170/400;
 }
+.quote .quotes {
+  padding-top: 3%;
+  padding-left: 8.5%;
+}
+.quote .quotes svg {
+  width: 102px;
+}
 .quote .text {
   position: absolute;
   top: 25%;
   left: 13.5%;
-  width: clamp(300px, 60vw, 770px);
+  width: clamp(300px, 60vw, 715px);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -256,36 +265,46 @@ h2 {
   padding-bottom: 30px;
 }
 .quote .text .author {
-  font-size: 1.25rem;
   letter-spacing: 1.7px;
+  font-size: 1.25rem;
 }
 
 .video .video-tablet {
   position: relative;
+  display: flex;
   width: 83%;
   aspect-ratio: 970/601;
   margin: 0 auto;
   border-radius: 30px;
   border: 1px solid #E4E4E4;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 14px;
+}
+.video .video-tablet .circle {
+  width: 35px;
+  height: 35px;
+  border: #E4E4E4 1px solid;
+  border-radius: 50%;
+}
+.video .video-tablet iframe {
+  width: 89%;
+  height: 89%;
 }
 .video h2,
 .video p {
-  padding-left: 8%;
+  padding-left: 8.5%;
   padding-right: 16%;
 }
 .video h2 {
   padding-bottom: 25px;
 }
 
-iframe {
-  position: absolute;
-  width: 89%;
-  top: 30px;
-  left: 30px;
-  height: 89%;
+.images-text.square {
+  gap: 10px;
 }
-
 .images-text.square .photo {
   aspect-ratio: 600/540;
   width: 51.5%;
@@ -298,15 +317,15 @@ iframe {
   width: 90.5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(5px, 16%, 70px) clamp(5px, 7.7%, 70px);
-  padding-bottom: 30px;
+  gap: clamp(5px, 25vh, 55px) clamp(5px, 35vw, 100px);
+  padding-bottom: 25px;
   padding-top: 30px;
 }
 .images-text.square .info .info-table-button li p {
   padding-bottom: 10px;
 }
 .images-text.square .info .info-table-button li p:last-of-type {
-  padding-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .btn {
@@ -364,7 +383,7 @@ h3 {
   font-size: 1rem;
   color: #fff;
   font-weight: 400;
-  line-height: clamp(1rem, 5.3vh, 1.625rem);
+  line-height: clamp(1rem, 6.5vh, 1.625rem);
 }
 .reviews ul li .text {
   position: absolute;
@@ -373,7 +392,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   top: 0;
-  padding: clamp(10px, 6.2vh, 30px) clamp(10px, 2vw, 40px);
+  padding: 30px 45px 40px 45px;
   background-color: #191C29;
   opacity: 0.6;
 }
@@ -384,7 +403,7 @@ h3 {
 
 section:last-of-type {
   margin-top: -20px;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 section:last-of-type .container {
   display: flex;
@@ -407,7 +426,7 @@ section:last-of-type form input {
   border-bottom: solid 1px #E4E4E4;
 }
 section:last-of-type form .color-ref {
-  width: 40%;
+  width: 190px;
   background-color: #fff;
   border: 0;
 }
@@ -560,12 +579,12 @@ footer .light {
   display: none;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1220px) {
   .reviews ul li .text {
     padding: 5px;
   }
 }
-@media screen and (max-width: 977px) {
+@media screen and (max-width: 970px) {
   .container {
     width: min(90%, 770px);
   }
@@ -661,6 +680,20 @@ footer .light {
   }
   .quote .text p {
     padding-bottom: 10px;
+    line-height: 30px;
+  }
+  .quote .quotes {
+    padding-top: -10px;
+    padding-left: 20px;
+  }
+  .quote .quotes svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .video .video-tablet .circle {
+    width: 20px;
+    height: 20px;
   }
 
   .images-text.square .photo {
@@ -843,6 +876,9 @@ footer .light {
   }
   section:last-of-type .contacte {
     flex-basis: 100%;
+  }
+  section:last-of-type form .color-ref {
+    width: 160px;
   }
 
   footer .container {

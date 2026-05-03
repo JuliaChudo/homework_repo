@@ -127,7 +127,7 @@ h1 {
   font-weight: 400;
   color: $text-color;
   line-height: 52px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 }
 
 .color-ref {
@@ -155,14 +155,14 @@ h1 {
   width: 44%;
 
   p {
-    width: 79%;
+    width: 85%;
     opacity: 0.8;
-    padding-bottom: 50px;
+    padding-bottom: 47px;
   }
 }
 
 section:first-of-type {
-  padding-bottom: 143px;
+  padding-bottom: 145px;
 }
 
 section {
@@ -205,7 +205,7 @@ section {
         justify-content: space-between;
         text-align: center;
         gap: 60px;
-        padding-top: 25px;
+        padding-top: 20px;
 
         li:not(:last-child) {
           background-image: linear-gradient(to right, rgba(#fff, 0) 35%, $text-green 35% 65%, rgba(#fff, 0) 65% 100%, transparent 0%);
@@ -226,7 +226,7 @@ section {
       }
 
       p:last-of-type {
-        padding-bottom: 50px;
+        padding-bottom: 45px;
       }
     }
   }
@@ -255,14 +255,17 @@ h2 {
 .info-table {
   display: grid;
   grid-template-columns: 48% 48%;
-  gap: 5.5vw 35px;
-  padding-bottom: 20px;
+  gap: 20vh 40px;
+
 
   li {
-    padding: 30px 30px;
+    padding: 30px 35px;
     border-top: solid 1px $border-color;
     aspect-ratio: 550/250;
 
+    h2 {
+      width: 87%;
+    }
   }
 }
 
@@ -279,11 +282,23 @@ h2 {
   position: relative;
   background: url('../images/quote-background2.png') center/100% no-repeat;
   aspect-ratio: 1170/400;
+
+  .quotes {
+    padding-top:3%;
+    padding-left: 8.5%;
+
+    svg {
+      width: 102px;
+      
+    }
+
+  }
+
   .text {
     position: absolute;
     top: 25%;
     left: 13.5%;
-    width: clamp(300px, 60vw, 770px);
+    width: clamp(300px, 60vw, 715px);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -300,9 +315,8 @@ h2 {
     }
 
     .author {
-      @include fz(20);
       letter-spacing: 1.7px;
-
+      @include fz(20);
     }
   }
 
@@ -313,17 +327,34 @@ h2 {
 .video {
   .video-tablet {
     position: relative;
+    display: flex;
     width: 83%;
     aspect-ratio: 970/601;
     margin: 0 auto;
     border-radius: 30px;
     border: 1px solid $border-color;
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 14px;
+
+    .circle {
+      width: 35px;
+      height: 35px;
+      border: $border-color 1px solid;
+      border-radius: 50%;
+    }
+
+    iframe {
+      width: 89%;
+      height: 89%;
+    }
   }
 
   h2,
   p {
-    padding-left: 8%;
+    padding-left: 8.5%;
     padding-right: 16%;
   }
 
@@ -332,15 +363,10 @@ h2 {
   }
 }
 
-iframe {
-  position: absolute;
-  width: 89%;
-  top: 30px;
-  left: 30px;
-  height: 89%;
-}
+
 
 .images-text.square {
+  gap: 10px;
   .photo {
     aspect-ratio: 600/540;
     width: 51.5%;
@@ -354,8 +380,8 @@ iframe {
       width: 90.5%;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: clamp(5px, 16%, 70px) clamp(5px, 7.7%, 70px);
-      padding-bottom: 30px;
+      gap: clamp(5px,25vh, 55px) clamp(5px, 35vw, 100px);
+      padding-bottom: 25px;
       padding-top: 30px;
 
       li {
@@ -364,7 +390,7 @@ iframe {
         }
 
         p:last-of-type {
-          padding-bottom: 0;
+          padding-bottom: 10px;
         }
       }
     }
@@ -434,7 +460,8 @@ h3 {
         @include fz(16);
         color: #fff;
         font-weight: 400;
-        line-height: clamp(1rem, 5.3vh, 1.625rem);
+        line-height:clamp(1rem, 6.5vh, 1.625rem);
+        
       }
 
       .text {
@@ -444,7 +471,7 @@ h3 {
         flex-direction: column;
         justify-content: space-between;
         top: 0;
-        padding: clamp(10px, 6.2vh, 30px) clamp(10px, 2vw, 40px);
+        padding: 30px 45px 40px 45px;
 
         background-color: #191C29;
         opacity: 0.6;
@@ -462,7 +489,7 @@ h3 {
 
 section:last-of-type {
   margin-top: -20px;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 
   .container {
     display: flex;
@@ -488,7 +515,7 @@ section:last-of-type {
     }
 
     .color-ref {
-      width: 40%;
+      width: 190px;
       background-color: #fff;
       border: 0;
     }
@@ -664,7 +691,7 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1220px) {
   .reviews {
     ul li .text {
       padding: 5px;
@@ -672,7 +699,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 977px) {
+@media screen and (max-width: 970px) {
   .container {
     width: min(90%, 770px);
   }
@@ -778,10 +805,25 @@ footer {
 
       p {
         padding-bottom: 10px;
+        line-height: 30px;
       }
+    }
+     .quotes {
+    padding-top: -10px;
+    padding-left: 20px;
+
+    svg {
+      width: 50px;
+      height: 50px;
     }
   }
 
+  }
+
+  .video .video-tablet .circle{
+    width: 20px;
+    height: 20px;
+  }
   .images-text.square {
 
     .photo {
@@ -1020,6 +1062,9 @@ footer {
 
     .contacte {
       flex-basis: 100%;
+    }
+    form .color-ref {
+      width: 160px;
     }
   }
 
