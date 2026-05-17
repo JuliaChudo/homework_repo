@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/pico.classless.lime.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <title>JS function</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Функції</h1>
+
+        <h2>Мінімум</h2>
+        <p class="task">Напиши всі можливі варіанти створення функцій.</p>
+        <ul>
+            <li>Оголошення функції</li>
+            <li>Функціональний вираз</li>
+            <li>Стрілокові функції</li>
+            <li>Анонімні функції</li>
+            <li>Callback функції</li>
+            <li>Рекурсивні функції</li>
+            <li>Фнкція замикання</li>
+        </ul>
+
+        <p class="task">Створи функцію, яка буде виводити кількість переданих їй аргументів.</p>
+        <button type="button" onclick="countArguments(1,2,3)">2</button>
+        <p class="task">Напиши функцію, яка приймає 2 числа і повертає :</p>
+        <ul>
+            <li>-1, якщо перше число менше, ніж друге; </li>
+            <li>1 - якщо перше число більше, ніж друге; </li>
+            <li>0 - якщо числа рівні.</li>
+        </ul>
+        <button type="button" onclick="getComparisonOfNumbers(5,4)">3</button>
+        <p class="task">Напиши функцію, яка обчислює факторіал переданого їй числа.</p>
+        <button type="button" onclick="calcFactorial(2)">4</button>
+        <p class="task">Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1,
+            4, 9 перетворяться в число 149.</p>
+        <button type="button" onclick="getNumber(1,4,9)">5</button>
+        <p class="task">Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію
+            передали 1 параметр, то вона обчислює площу квадрата.</p>
+        <button type="button" onclick="getArea(6,9)">6</button>
+        <p></p>
+
+        <h2>Норма</h2>
+        <p class="task">Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це
+            число, яке дорівнює сумі всіх своїх дільників.</p>
+        <button type="button" onclick="isPerfectNumber(28)">1</button>
+
+        <p class="task">Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки
+            ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число
+            досконалим.</p>
+        <button type="button" onclick="perfectNumbers(6,2100)">2</button>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
