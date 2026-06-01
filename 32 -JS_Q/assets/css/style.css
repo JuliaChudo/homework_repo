@@ -244,3 +244,52 @@ h3 {
 .partners img {
   height: 35px;
 }
+
+footer {
+  color: #F8F1EA;
+  background-color: #35312D;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+footer .footer-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wraper .logo {
+  margin-bottom: 35px;
+}
+footer .footer-wraper .footer-info ul li a {
+  color: #F8F1EA;
+}
+footer .footer-wraper .footer-info ul li a:hover {
+  color: #F16A50;
+}
+footer .footer-wraper .contacts ul {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+footer .footer-wraper .contacts ul li a {
+  transition: all 0.2s ease;
+}
+footer .footer-wraper .contacts ul li a svg {
+  fill: #F8F1EA;
+  height: 30px;
+  width: 70px;
+}
+footer .footer-wraper .contacts ul li a:hover svg {
+  fill: #F16A50;
+}
+footer .footer-wraper .contacts ul li a:hover svg#youtube {
+  stroke: #F16A50;
+}
+footer li {
+  font-size: 1.25rem;
+}
+footer .copy {
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 48px;
+}
