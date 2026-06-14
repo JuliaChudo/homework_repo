@@ -10,23 +10,47 @@ var CART = [{
   qty: 1
 }];
 
-function subminHandler() {
+var getEl = function getEl(id) {
+  return document.getElementById(id);
+};
+
+function submitHandler() {
   event.preventDefault();
+  var title = getEl('product_title').value;
+  var price = getEl('product_price').valueAsNumber;
+  var qty = getEl('product_qty').valueAsNumber;
+
+  if (title === '') {
+    toast.error('Enter product title');
+    return false;
+  }
+
+  if (isNaN(price) || price <= 0) {
+    toast.error('Enter product price');
+    return false;
+  }
+
+  if (isNaN(qty) || qty <= 0) {
+    toast.error('Enter product quantity');
+    return false;
+  }
+
+  addTocard(title, price, qty);
   return false;
 }
 
-var findedEl = CART.find(function (el) {
-  return el.title === 'Молоко';
-});
-
-if (findedEl) {
-  findedEl.qty = findedEl.qty + 1;
-} else {
-  CART.push({
-    title: 'Молоко',
-    price: 42.00,
-    qty: 1
+function addTocard(title, price, qty) {
+  var findedEl = CART.find(function (el) {
+    return el.title === title;
   });
-}
 
-console.log(findedEl);
+  if (findedEl) {
+    findedEl.qty += qty;
+  } else {
+    CART.push({
+      title: title,
+      price: price,
+      qty: qty
+    });
+  }
+}

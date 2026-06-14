@@ -153,6 +153,15 @@ h3 {
 .slider-wraper {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.slider-wraper .container {
+  margin: 0;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
 }
 
 .products {
@@ -292,4 +301,4 @@ footer .copy {
 
 h4 {
   margin-bottom: 48px;
-}
+}/*# sourceMappingURL=style.css.map */

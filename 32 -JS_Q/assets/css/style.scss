@@ -195,8 +195,15 @@ h3 {
 .slider-wraper {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap:10px;
+  .container{
+    margin: 0;
+  }
 }
-
+.rotate-arrow{
+  transform: rotate(180deg);
+}
 .products {
   text-align: center;
   margin-bottom: 26px;

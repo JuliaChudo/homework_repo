@@ -59,7 +59,6 @@ header {
   top: 30px;
   height: 80px;
   background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   z-index: 998;
 }
@@ -432,7 +431,6 @@ section:last-of-type form .color-ref {
 }
 section:last-of-type form a {
   display: inline-block;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -478,6 +476,11 @@ section:last-of-type form a {
 .did-floating-input:focus ~ .did-floating-label {
   top: -20px;
   font-size: 16px;
+}
+
+.did-floating-input:not(:-moz-placeholder) ~ .did-floating-label {
+  top: -15px;
+  font-size: 1.125rem;
 }
 
 .did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
@@ -588,42 +591,33 @@ footer .light {
   .container {
     width: min(90%, 770px);
   }
-
   .main-menu {
     display: none;
   }
-
   .hamburger-wrap {
     display: block;
   }
-
   header .container {
     height: 60px;
   }
-
   main {
     margin-top: 60px;
     gap: 70px;
   }
-
   h1 {
     margin-top: 150px;
     font-size: 2.5rem;
     line-height: 48px;
   }
-
   .main-text {
     width: 75%;
   }
-
   section:first-of-type {
     padding-bottom: 120px;
   }
-
   section {
     padding-bottom: 80px;
   }
-
   .images-text {
     flex-direction: column;
   }
@@ -651,7 +645,6 @@ footer .light {
   .images-text .text-grey {
     padding-right: auto;
   }
-
   .numder {
     font-size: 2.375rem;
     padding-bottom: 15px;
@@ -659,20 +652,17 @@ footer .light {
   .numder.big {
     padding-bottom: 20px;
   }
-
   .info-table {
     gap: 10px 10px;
   }
   .info-table li {
     padding: 10px 10px;
   }
-
   h2 {
     font-size: 1.875rem;
     padding-bottom: 20px;
     padding-top: 10px;
   }
-
   .quote .text {
     top: 10%;
     left: 5%;
@@ -690,12 +680,10 @@ footer .light {
     width: 50px;
     height: 50px;
   }
-
   .video .video-tablet .circle {
     width: 20px;
     height: 20px;
   }
-
   .images-text.square .photo {
     width: 80%;
   }
@@ -708,13 +696,11 @@ footer .light {
     padding-top: 10px;
     gap: 15px;
   }
-
   .btn {
     background-color: rgba(255, 255, 255, 0.2);
   }
-
   .reviews h2,
-.reviews p {
+  .reviews p {
     padding-left: 8%;
   }
   .reviews h2 + p {
@@ -743,33 +729,26 @@ footer .light {
   .container {
     width: min(95%, 320px);
   }
-
   header {
     height: 50px;
   }
-
   header .container {
     height: 50px;
   }
-
   h1 {
     margin-top: 70px;
     font-size: 1.5625rem;
     line-height: 30px;
   }
-
   .main-text {
     width: 90%;
   }
-
   section {
     padding-bottom: 10px;
   }
-
   section:first-of-type {
     padding-bottom: 10px;
   }
-
   .images-text {
     flex-direction: column-reverse;
   }
@@ -793,18 +772,15 @@ footer .light {
   .images-text .info-text {
     width: 100%;
   }
-
   h2 {
     font-size: 1.5625rem;
     padding-bottom: 10px;
     line-height: 35px;
     padding-top: 10px;
   }
-
   .info-table {
     grid-template-columns: 95%;
   }
-
   .numder {
     font-size: 1.25rem;
     padding-bottom: 5px;
@@ -812,7 +788,6 @@ footer .light {
   .numder.big {
     padding-bottom: 5px;
   }
-
   .quote {
     background: url("../images/features.webp") center/100% no-repeat;
     aspect-ratio: 300/300;
@@ -820,26 +795,23 @@ footer .light {
   .quote .text p {
     line-height: 30px;
   }
-
   .video .video-tablet {
     width: 100%;
     border-radius: 30px;
   }
   .video h2,
-.video p {
+  .video p {
     padding-left: 0;
     padding-right: 0;
   }
   .video h2 {
     padding-bottom: 15px;
   }
-
   iframe {
     width: 90%;
     top: 15px;
     left: 15px;
   }
-
   .images-text.square .photo {
     width: 100%;
   }
@@ -852,10 +824,9 @@ footer .light {
     grid-template-columns: 100%;
   }
   .images-text.square .info .info-table-button li p,
-.images-text.square .info .info-table-button li h3 {
+  .images-text.square .info .info-table-button li h3 {
     line-height: 20px;
   }
-
   .reviews ul li {
     width: 100%;
   }
@@ -870,7 +841,6 @@ footer .light {
     padding: 5px;
     line-height: 20px;
   }
-
   section:last-of-type .container {
     flex-direction: column;
   }
@@ -880,7 +850,6 @@ footer .light {
   section:last-of-type form .color-ref {
     width: 160px;
   }
-
   footer .container {
     height: 100px;
     margin-top: 30px;
@@ -895,4 +864,4 @@ body.mob-show .overlay {
 }
 body.mob-show .mobile-panel {
   transform: translateX(0);
-}
+}/*# sourceMappingURL=style.css.map */

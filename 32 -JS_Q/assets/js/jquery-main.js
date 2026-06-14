@@ -3,7 +3,10 @@ $(function(){
         item: 1,
         loop: true,
         controls: false,
-        galleryMargin: 2
+        galleryMargin: 2,
+        auto: true,
+        pause:3000,
+        pauseOnHover:true
     })
 })
 $(function(){
